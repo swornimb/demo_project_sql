@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Charges Index</h1>
+<table class=" table-striped  " style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                ProcedureCode
+            </th>
+            <th>
+                PatientName
+            </th>
+            <th>
+                EffectiveDate
+            </th>
+            <th>
+                isAnchor
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td>@obj.Id</td>
+                <td>@obj.ProcedureCode</td>
+                <td>@obj.PatientName</td>
+                <td>@obj.EffectiveDate</td>
+                <td>@obj.isAnchor</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+

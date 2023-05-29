@@ -1,0 +1,26 @@
+﻿@model Charge
+
+<h1>Create</h1>
+
+<form method="post">
+
+    <div>
+        <label asp-for="PatientName"></label>
+        <input asp-for="PatientName" />
+    </div>
+    <div>
+        <label asp-for="ProcedureCode"></label>
+        <input asp-for="ProcedureCode" />
+    </div>
+    <div>
+        <label asp-for="EffectiveDate"></label>
+        <input asp-for="EffectiveDate" type="date" />
+    </div>
+
+    <div>
+        <label asp-for="isAnchor"></label>
+        <input asp-for="isAnchor" type="checkbox" />
+    </div>
+    <button type="submit">Create</button>
+</form>
+
